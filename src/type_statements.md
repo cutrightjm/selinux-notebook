@@ -514,9 +514,9 @@ Policy Type
 
 Conditional Policy Statements
 
-| *if* Statement          | *optional* Statement    | *require* Statement     |
-| ----------------------- | ----------------------- | ----------------------- |
-| Yes                     | Yes                     | No                      |
+| *if* Statement            | *optional* Statement   | *require* Statement     |
+| ------------------------- | ---------------------- | ----------------------- |
+| Yes (no name transitions) | Yes                    | No                      |
 
 **Example - Domain Transition:**
 
@@ -670,7 +670,7 @@ section for more details.
 **The statement definition is:**
 
 ```
-member_type source_type target_type : class member_type;
+type_member source_type target_type : class member_type;
 ```
 
 **Where:**
